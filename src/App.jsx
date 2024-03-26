@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar'
 import Button from './components/button/Button'
 import Componente from './components/button/Componente'
 import { ChakraProvider } from '@chakra-ui/react'
+import ItemCount from './components/itemCount/ItemCount'
 
 function App() {
 
@@ -11,8 +12,8 @@ function App() {
     <ChakraProvider>
       <NavBar /> 
       <ItemListContainer title='Tienda '/>
+      <ItemCount />
     </ChakraProvider>
-
   )
 }
 

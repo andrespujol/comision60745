@@ -11,8 +11,8 @@ import {
     MenuOptionGroup,
     MenuDivider,
     Button,
-    Box,
-    Flex
+    Flex,
+    Box
  } from '@chakra-ui/react'
  import { FaAngleDown } from "react-icons/fa";
  import logo from '../../assets/react.svg'
@@ -20,17 +20,19 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <Flex className='navbar'>
-      <Heading ml={4}><img src={logo}/></Heading>
+    <Flex justify={'space-between'} align={'center'} className='navbar'>
+
+      <Heading ml={4}><img src={logo} /></Heading>
       <Menu>
         <MenuButton as={Button} rightIcon={<FaAngleDown />}>
-            Productos
+            Actions
         </MenuButton>
-        <MenuList >
-            <MenuItem>Remeras</MenuItem>
-            <MenuItem>Pantalones</MenuItem>
-            <MenuItem>Buzos</MenuItem>
-            <MenuItem>Pijamas</MenuItem>
+        <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
         </MenuList>
         </Menu>
 

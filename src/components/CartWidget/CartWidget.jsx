@@ -6,7 +6,7 @@ import './CartWidget.css'
 const CartWidget = () => {
   return (
     <Box mr={4}>
-      <MdOutlineShoppingCart className='cartIcon' />
+      <MdOutlineShoppingCart className='cartIcon' /><span>3</span>
 
     </Box>
   )
